@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    build: .
+    image: phalcon-test-dev-image
+    container_name: phalcon-test-dev
+    ports:
+      - 8001:80
+    volumes:
+      - /Users/fabian/projects/phalcon-test/public:/var/www/html
